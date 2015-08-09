@@ -1,0 +1,6 @@
+[submodule "External/FLAnimatedImage"]
+	path = External/FLAnimatedImage
+	url = https://github.com/Flipboard/FLAnimatedImage.git
+[submodule "External/PINCache"]
+	path = External/PINCache
+	url = https://github.com/pinterest/PINCache.git

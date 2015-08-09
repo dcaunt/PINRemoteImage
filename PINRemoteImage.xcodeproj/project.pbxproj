@@ -41,7 +41,19 @@
 		BF1791691B714950009B6197 /* UIButton+PINRemoteImage.m in Sources */ = {isa = PBXBuildFile; fileRef = BF17915D1B714950009B6197 /* UIButton+PINRemoteImage.m */; };
 		BF17916A1B714950009B6197 /* UIImageView+PINRemoteImage.h in Headers */ = {isa = PBXBuildFile; fileRef = BF17915E1B714950009B6197 /* UIImageView+PINRemoteImage.h */; };
 		BF17916B1B714950009B6197 /* UIImageView+PINRemoteImage.m in Sources */ = {isa = PBXBuildFile; fileRef = BF17915F1B714950009B6197 /* UIImageView+PINRemoteImage.m */; };
+		BFCD9E051B77D30D0059E07D /* FLAnimatedImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFCD9DF81B77D1E30059E07D /* FLAnimatedImage.framework */; };
+		BFCD9E071B77D4720059E07D /* PINCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFCD9E061B77D4720059E07D /* PINCache.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BFCD9DF71B77D1E30059E07D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFCD9DF21B77D1E30059E07D /* FLAnimatedImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BFCD9DCD1B77D1A00059E07D;
+			remoteInfo = FLAnimatedImage;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		BF17910C1B714752009B6197 /* PINRemoteImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PINRemoteImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +94,8 @@
 		BF17915D1B714950009B6197 /* UIButton+PINRemoteImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+PINRemoteImage.m"; sourceTree = "<group>"; };
 		BF17915E1B714950009B6197 /* UIImageView+PINRemoteImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+PINRemoteImage.h"; sourceTree = "<group>"; };
 		BF17915F1B714950009B6197 /* UIImageView+PINRemoteImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+PINRemoteImage.m"; sourceTree = "<group>"; };
+		BFCD9DF21B77D1E30059E07D /* FLAnimatedImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FLAnimatedImage.xcodeproj; path = External/FLAnimatedImage.xcodeproj; sourceTree = "<group>"; };
+		BFCD9E061B77D4720059E07D /* PINCache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINCache.framework; path = Carthage/Build/iOS/PINCache.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +103,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFCD9E051B77D30D0059E07D /* FLAnimatedImage.framework in Frameworks */,
+				BFCD9E071B77D4720059E07D /* PINCache.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +114,8 @@
 		BF1791021B714752009B6197 = {
 			isa = PBXGroup;
 			children = (
+				BFCD9E061B77D4720059E07D /* PINCache.framework */,
+				BFCD9DF21B77D1E30059E07D /* FLAnimatedImage.xcodeproj */,
 				BF17910E1B714752009B6197 /* PINRemoteImage */,
 				BF17911B1B714752009B6197 /* PINRemoteImageTests */,
 				BF17910D1B714752009B6197 /* Products */,
@@ -195,6 +213,14 @@
 			path = "Image Categories";
 			sourceTree = "<group>";
 		};
+		BFCD9DF31B77D1E30059E07D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFCD9DF81B77D1E30059E07D /* FLAnimatedImage.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -268,12 +294,28 @@
 			mainGroup = BF1791021B714752009B6197;
 			productRefGroup = BF17910D1B714752009B6197 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = BFCD9DF31B77D1E30059E07D /* Products */;
+					ProjectRef = BFCD9DF21B77D1E30059E07D /* FLAnimatedImage.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				BF17910B1B714752009B6197 /* PINRemoteImage */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		BFCD9DF81B77D1E30059E07D /* FLAnimatedImage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FLAnimatedImage.framework;
+			remoteRef = BFCD9DF71B77D1E30059E07D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		BF17910A1B714752009B6197 /* Resources */ = {
@@ -407,6 +449,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = PINRemoteImage/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -422,6 +468,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = PINRemoteImage/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
