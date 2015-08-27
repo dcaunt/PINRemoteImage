@@ -6,6 +6,16 @@
 //
 //
 
+
+#import <Foundation/Foundation.h>
+
+//! Project version number for PINRemoteImage.
+FOUNDATION_EXPORT double PINRemoteImageVersionNumber;
+
+//! Project version string for PINRemoteImage.
+FOUNDATION_EXPORT const unsigned char PINRemoteImageVersionString[];
+
+
 #ifndef Pods_PINRemoteImage_h
 #define Pods_PINRemoteImage_h
 
