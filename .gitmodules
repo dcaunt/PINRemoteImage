@@ -1,0 +1,6 @@
+[submodule "Carthage/Checkouts/FLAnimatedImage"]
+	path = Carthage/Checkouts/FLAnimatedImage
+	url = https://github.com/Flipboard/FLAnimatedImage.git
+[submodule "Carthage/Checkouts/PINCache"]
+	path = Carthage/Checkouts/PINCache
+	url = https://github.com/pinterest/PINCache.git
